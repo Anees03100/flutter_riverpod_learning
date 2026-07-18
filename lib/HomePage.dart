@@ -88,7 +88,11 @@ class Homepage extends ConsumerWidget {
           SizedBox(height: 20),
           Center(
             child: FloatingActionButton(
-              child: Icon(isDarkMode ? Icons.nightlight_round : Icons.wb_sunny),
+              backgroundColor: isDarkMode ? Colors.white : Colors.black,
+              child: Icon(
+                isDarkMode ? Icons.nightlight_round : Icons.wb_sunny,
+                color: isDarkMode ? Colors.black : Colors.white,
+              ),
               onPressed: () {
                 ref.read(themeProvider.notifier).update((state) => !state);
               },
