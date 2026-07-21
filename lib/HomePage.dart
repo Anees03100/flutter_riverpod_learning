@@ -1,8 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_practice/Providers/cart_quantity_provider.dart';
-import 'package:riverpod_practice/Providers/theme_provider.dart';
+import 'package:riverpod_practice/Providers/state_provider/cart_quantity_provider.dart';
+import 'package:riverpod_practice/Providers/state_provider/theme_provider.dart';
 
 class Homepage extends ConsumerWidget {
   const Homepage({super.key});
